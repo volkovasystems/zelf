@@ -1,0 +1,27 @@
+{
+  "name": "zelf",
+  "description": "I think therefore I am.",
+  "main": "zelf.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "this",
+    "self",
+    "global",
+    "window",
+    "zelf"
+  ],
+  "homepage": "https://github.com/volkovasystems/zelf",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "asea": "^0.0.3"
+  }
+}
