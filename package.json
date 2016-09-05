@@ -1,6 +1,6 @@
 {
   "name": "zelf",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "I think therefore I am.",
   "main": "zelf.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/volkovasystems/zelf#readme",
   "dependencies": {
-    "asea": "0.0.3"
+    "asea": "0.0.4"
   }
 }
