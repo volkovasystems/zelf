@@ -64,15 +64,16 @@ if( typeof window != "undefined" &&
 }
 
 var zelf = function zelf( self ){
-	if( asea.server ){
-		if( self === global ){
-			return global;
-		}
+	if( asea.server &&
+		self === global )
+	{
+		return global;
+	}
 
-	}else if( asea.client ){
-		if( self === window ){
-			return window;
-		}
+	if( asea.client &&
+		self === window )
+	{
+		return window;
 	}
 
 	return self;
