@@ -40,8 +40,7 @@
 	@end-module-configuration
 
 	@module-documentation:
-		Returns window for client, global for server and
-			if nothing match, return itself.
+		Returns window for client, global for server and if nothing match, return itself.
 	@end-module-documentation
 
 	@include:
@@ -51,7 +50,7 @@
 	@end-include
 */
 
-if( typeof window == "undefined" ){
+if( typeof require == "function" ){
 	var asea = require( "asea" );
 }
 
@@ -61,22 +60,30 @@ if( typeof window != "undefined" &&
 	throw new Error( "asea is not defined" );
 }
 
-var zelf = function zelf( self ){
-	if( asea.server &&
-		self === global )
-	{
+this.zelf = function zelf( self ){
+	/*;
+		@meta-configuration:
+			{
+				"self:required": "object"
+			}
+		@end-meta-configuration
+	*/
+
+	self = self || this;
+
+	if( asea.server && self === global ){
 		return global;
 	}
 
-	if( asea.client &&
-		self === window )
-	{
+	if( asea.client && self === window ){
 		return window;
 	}
 
 	return self;
 };
 
-if( asea.server ){
-	module.exports = zelf;
+if( typeof module != "undefined" &&
+	typeof module.exports != "undefined" )
+{
+	module.exports = this.zelf;
 }
