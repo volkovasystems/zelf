@@ -54,13 +54,11 @@ if( typeof require == "function" ){
 	var asea = require( "asea" );
 }
 
-if( typeof window != "undefined" &&
-	!( "asea" in window ) )
-{
+if( typeof window != "undefined" && !( "asea" in window ) ){
 	throw new Error( "asea is not defined" );
 }
 
-this.zelf = function zelf( self ){
+var zelf = function zelf( self ){
 	/*;
 		@meta-configuration:
 			{
@@ -82,8 +80,6 @@ this.zelf = function zelf( self ){
 	return self;
 };
 
-if( typeof module != "undefined" &&
-	typeof module.exports != "undefined" )
-{
-	module.exports = this.zelf;
+if( typeof module != "undefined" && typeof module.exports != "undefined" ){
+	module.exports = zelf;
 }
