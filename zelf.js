@@ -50,15 +50,9 @@
 	@end-include
 */
 
-if( typeof require == "function" ){
-	var asea = require( "asea" );
-}
+const asea = require( "asea" );
 
-if( typeof window != "undefined" && !( "asea" in window ) ){
-	throw new Error( "asea is not defined" );
-}
-
-var zelf = function zelf( self ){
+const zelf = function zelf( self ){
 	/*;
 		@meta-configuration:
 			{
@@ -69,17 +63,15 @@ var zelf = function zelf( self ){
 
 	self = self || this;
 
-	if( asea.server && self === global ){
+	if( asea.server && ( self === global || typeof self == "undefined" || self === null ) ){
 		return global;
 	}
 
-	if( asea.client && self === window ){
+	if( asea.client && ( self === window || typeof self == "undefined" || self === null ) ){
 		return window;
 	}
 
 	return self;
 };
 
-if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = zelf;
-}
+module.exports = zelf;

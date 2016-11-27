@@ -1,16 +1,16 @@
 {
   "name": "zelf",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
     "asea": {
-      "version": "0.3.0",
+      "version": "0.4.0",
       "from": "asea@latest",
-      "resolved": "https://registry.npmjs.org/asea/-/asea-0.3.0.tgz",
+      "resolved": "https://registry.npmjs.org/asea/-/asea-0.4.0.tgz",
       "dependencies": {
         "harden": {
-          "version": "0.6.0",
+          "version": "0.7.0",
           "from": "harden@latest",
-          "resolved": "https://registry.npmjs.org/harden/-/harden-0.6.0.tgz"
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "name": "zelf",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "I think therefore I am.",
   "main": "zelf.js",
   "authors": [
@@ -23,6 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "asea": "^0.3.0"
+    "asea": "^0.4.0"
   }
 }
