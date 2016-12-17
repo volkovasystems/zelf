@@ -1,3 +1,5 @@
+"use strict";
+
 /*;
 	@module-license:
 		The MIT License (MIT)
@@ -50,32 +52,32 @@
 	@end-include
 */
 
-const asea = require( "asea" );
+var asea = require("asea");
 
-const zelf = function zelf( self ){
+var zelf = function zelf(self) {
 	/*;
-		@meta-configuration:
-			{
-				"self:required": "object"
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"self:required": "object"
+ 		}
+ 	@end-meta-configuration
+ */
 
 	self = self || this;
 
-	if( asea.server && ( self === global || typeof self == "undefined" || self === null ) ){
+	if (asea.server && (self === global || typeof self == "undefined" || self === null)) {
 		return global;
 	}
 
-	if( asea.client && ( self === window || typeof self == "undefined" || self === null ) ){
+	if (asea.client && (self === window || typeof self == "undefined" || self === null)) {
 		return window;
 	}
 
-	if( asea.server && typeof self == "undefined" ){
+	if (asea.server && typeof self == "undefined") {
 		return global;
 	}
 
-	if( asea.client && typeof self == "undefined" ){
+	if (asea.client && typeof self == "undefined") {
 		return window;
 	}
 
