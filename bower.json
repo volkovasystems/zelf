@@ -1,10 +1,9 @@
 {
   "name": "zelf",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "I think therefore I am.",
-  "main": "zelf.js",
+  "main": "zelf.deploy.js",
   "support": "zelf.support.js",
-  "deploy": "zelf.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
@@ -26,6 +25,6 @@
     "tests"
   ],
   "dependencies": {
-    "asea": "^0.8.0"
+    "asea": "^0.9.0"
   }
 }
