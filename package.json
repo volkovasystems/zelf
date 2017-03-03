@@ -1,13 +1,13 @@
 {
   "name": "zelf",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "I think therefore I am.",
   "main": "zelf.js",
   "support": "zelf.support.js",
   "deploy": "zelf.deploy.js",
   "browser": "zelf.deploy.js",
   "scripts": {
-    "build": "babel zelf.js --out-file zelf.support.js --source-maps && webpack --progress",
+    "build": "babel zelf.js --out-file zelf.support.js --source-maps && webpack --progress --display-modules",
     "test": "mocha zelf-test.js"
   },
   "repository": {
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/volkovasystems/zelf#readme",
   "dependencies": {
-    "asea": "^0.10.0",
+    "asea": "^0.11.0",
     "babel-runtime": "^6.23.0"
   },
   "devDependencies": {
