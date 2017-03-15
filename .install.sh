@@ -12,4 +12,5 @@ webpack \
 --dev && \
 bower install \
 asea \
---save
+--save \
+--force-latest
