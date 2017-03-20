@@ -1,6 +1,6 @@
 {
   "name": "zelf",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "I think therefore I am.",
   "main": "zelf.js",
   "support": "zelf.support.js",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/volkovasystems/zelf#readme",
   "dependencies": {
-    "asea": "^0.12.0",
+    "asea": "^0.13.0",
     "babel-runtime": "^6.23.0"
   },
   "devDependencies": {
