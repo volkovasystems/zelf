@@ -1,8 +1,35 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./zelf.deploy.js">
-		</script>
+		<title>zelf unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./zelf.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "zelf unit test", function( assert ) {
+
+				assert.equal( zelf( 123 ), 123, "should have value 123" );
+
+				assert.deepEqual( zelf( { "name": "simple" } ), { "name": "simple" }, "should be equal" );
+
+				assert.deepEqual( zelf( [ ] ), [ ], "should have empty array" );
+
+				assert.deepEqual( zelf( [ { "name": "simple" } ] ), [ { "name": "simple" } ], "should be equal" );
+
+				let test = function test( ){ };
+				assert.equal( zelf( test ), test, "should be equal" );
+
+			} );
+		</script>
+	</body>
 </html>

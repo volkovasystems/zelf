@@ -1,12 +1,13 @@
 {
   "name": "zelf",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "I think therefore I am.",
   "main": "zelf.deploy.js",
   "support": "zelf.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -25,6 +26,6 @@
     "tests"
   ],
   "dependencies": {
-    "asea": "^0.14.0"
+    "asea": "^0.16.0"
   }
 }
