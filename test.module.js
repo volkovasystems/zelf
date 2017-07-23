@@ -74,6 +74,25 @@ const path = require( "path" );
 
 describe( "zelf", ( ) => {
 
+
+	describe( "`zelf( )`", ( ) => {
+		it( "should return global", ( ) => {
+
+			assert.equal( zelf( ), global );
+
+		} );
+	} );
+
+
+	describe( "`zelf( null )`", ( ) => {
+		it( "should return global", ( ) => {
+
+			assert.equal( zelf( null ), global );
+
+		} );
+	} );
+
+
 	describe( "`zelf( global )`", ( ) => {
 		it( "should return global", ( ) => {
 
@@ -99,13 +118,33 @@ describe( "zelf", ( ) => {
 
 describe( "zelf", ( ) => {
 
-	describe( "`zelf( window )`", ( ) => {
-		it( "should return window", ( ) => {
 
-			assert.equal( zelf( window ), window );
+	describe( "`zelf( )`", ( ) => {
+		it( "should return undefined", ( ) => {
+
+			assert.equal( typeof zelf( ) == "undefined", true );
 
 		} );
 	} );
+
+
+	describe( "`zelf( null )`", ( ) => {
+		it( "should return undefined", ( ) => {
+
+			assert.equal( typeof zelf( null ) == "undefined", true );
+
+		} );
+	} );
+
+
+	describe( "`zelf( window )`", ( ) => {
+		it( "should return window", ( ) => {
+
+			assert.deepEqual( zelf( window ), window );
+
+		} );
+	} );
+
 
 	describe( "`zelf( [ ] )`", ( ) => {
 		it( "should return [ ]", ( ) => {
@@ -124,9 +163,32 @@ describe( "zelf", ( ) => {
 
 describe( "zelf", ( ) => {
 
+
 	let directory = __dirname;
 	let testBridge = path.resolve( directory, "bridge.html" );
 	let bridgeURL = `file://${ testBridge }`;
+
+
+	describe( "`zelf( )`", ( ) => {
+		it( "should return window", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( ) );
+
+			assert.equal( result.state, "success" );
+
+		} );
+	} );
+
+
+	describe( "`zelf( null )`", ( ) => {
+		it( "should return global", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( null ) );
+
+			assert.equal( result.state, "success" );
+
+		} );
+	} );
 
 
 	describe( "`zelf( this )`", ( ) => {
