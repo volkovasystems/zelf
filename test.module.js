@@ -130,7 +130,7 @@ describe( "zelf", ( ) => {
 
 	describe( "`zelf( null )`", ( ) => {
 		it( "should return undefined", ( ) => {
-
+			console.log( zelf( null ) );
 			assert.equal( typeof zelf( null ) == "undefined", true );
 
 		} );
@@ -139,7 +139,7 @@ describe( "zelf", ( ) => {
 
 	describe( "`zelf( window )`", ( ) => {
 		it( "should return window", ( ) => {
-			
+
 			assert.deepEqual( zelf( window ), window );
 
 		} );
@@ -167,28 +167,6 @@ describe( "zelf", ( ) => {
 	let directory = __dirname;
 	let testBridge = path.resolve( directory, "bridge.html" );
 	let bridgeURL = `file://${ testBridge }`;
-
-
-	describe( "`zelf( )`", ( ) => {
-		it( "should return window", ( ) => {
-
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( ) );
-
-			assert.equal( result.state, "success" );
-
-		} );
-	} );
-
-
-	describe( "`zelf( null )`", ( ) => {
-		it( "should return global", ( ) => {
-
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( null ) );
-
-			assert.equal( result.state, "success" );
-
-		} );
-	} );
 
 
 	describe( "`zelf( this )`", ( ) => {
