@@ -129,12 +129,22 @@ describe( "zelf", ( ) => {
 	let bridgeURL = `file://${ testBridge }`;
 
 
-	describe( "`zelf( window )`", ( ) => {
+	describe( "`zelf( this )`", ( ) => {
 		it( "should return window", ( ) => {
 
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( window ) );
+			/* @note
 
-			assert.deepEqual( result.value, window );
+				Do not change the zelf( this ) to zelf( window )
+				because window is not available on these scope.
+				Do not change the assert.equal( result.state, "success" )
+				to assert.equal( result.value, window )
+				because window is not available on these scope.
+
+			*/
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( this ) );
+
+			assert.equal( result.state, "success" );
 
 		} );
 	} );
