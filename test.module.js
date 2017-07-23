@@ -78,7 +78,7 @@ describe( "zelf", ( ) => {
 	describe( "`zelf( )`", ( ) => {
 		it( "should return global", ( ) => {
 
-			assert.equal( zelf( ), global );
+			assert.deepEqual( zelf( ), global );
 
 		} );
 	} );
@@ -87,7 +87,7 @@ describe( "zelf", ( ) => {
 	describe( "`zelf( null )`", ( ) => {
 		it( "should return global", ( ) => {
 
-			assert.equal( zelf( null ), global );
+			assert.deepEqual( zelf( null ), global );
 
 		} );
 	} );
@@ -96,7 +96,7 @@ describe( "zelf", ( ) => {
 	describe( "`zelf( global )`", ( ) => {
 		it( "should return global", ( ) => {
 
-			assert.equal( zelf( global ), global );
+			assert.deepEqual( zelf( global ), global );
 
 		} );
 	} );
@@ -121,7 +121,7 @@ describe( "zelf", ( ) => {
 
 	describe( "`zelf( )`", ( ) => {
 		it( "should return undefined", ( ) => {
-
+			console.log( zelf( ) );
 			assert.equal( typeof zelf( ) == "undefined", true );
 
 		} );
@@ -139,7 +139,7 @@ describe( "zelf", ( ) => {
 
 	describe( "`zelf( window )`", ( ) => {
 		it( "should return window", ( ) => {
-
+			
 			assert.deepEqual( zelf( window ), window );
 
 		} );
