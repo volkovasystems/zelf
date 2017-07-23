@@ -68,3 +68,53 @@ const zelf = require( "./zelf.support.js" );
 //: @bridge:
 const path = require( "path" );
 //: @end-bridge
+
+
+//: @server:
+
+describe( "zelf", ( ) => {
+
+	describe( "`zelf( global )`", ( ) => {
+		it( "should return global", ( ) => {
+
+			assert.equal( zelf( global ), global );
+
+		} );
+	} );
+
+	describe( "`zelf( [ ] )`", ( ) => {
+		it( "should return empty array", ( ) => {
+
+			assert.deepEqual( zelf( [ ] ), [ ] );
+
+		} );
+	} );
+
+} );
+
+//: @end-server
+
+
+//: @client:
+
+describe( "zelf", ( ) => {
+
+	describe( "`zelf( window )`", ( ) => {
+		it( "should return window", ( ) => {
+
+			assert.equal( zelf( window ), window );
+
+		} );
+	} );
+
+	describe( "`zelf( [ ] )`", ( ) => {
+		it( "should return empty array", ( ) => {
+
+			assert.deepEqual( zelf( [ ] ), [ ] );
+
+		} );
+	} );
+
+} );
+
+//: @end-client
