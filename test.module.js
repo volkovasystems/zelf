@@ -118,3 +118,38 @@ describe( "zelf", ( ) => {
 } );
 
 //: @end-client
+
+
+//: @bridge:
+
+describe( "zelf", ( ) => {
+
+	let directory = __dirname;
+	let testBridge = path.resolve( directory, "bridge.html" );
+	let bridgeURL = `file://${ testBridge }`;
+
+
+	describe( "`zelf( window )`", ( ) => {
+		it( "should return window", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( window ) );
+
+			assert.deepEqual( result.value, window );
+
+		} );
+	} );
+
+
+	describe( "`zelf( [ ] )`", ( ) => {
+		it( "should return [ ]", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( [ ] ) );
+
+			assert.deepEqual( result.value, [ ] );
+
+		} );
+	} );
+
+} );
+
+//: @end-bridge
