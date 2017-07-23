@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>zelf unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:zelf</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./zelf.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "zelf unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( zelf( 123 ), 123, "should have value 123" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.deepEqual( zelf( { "name": "simple" } ), { "name": "simple" }, "should be equal" );
-
-				assert.deepEqual( zelf( [ ] ), [ ], "should have empty array" );
-
-				assert.deepEqual( zelf( [ { "name": "simple" } ] ), [ { "name": "simple" } ], "should be equal" );
-
-				let test = function test( ){ };
-				assert.equal( zelf( test ), test, "should be equal" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
