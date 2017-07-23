@@ -83,7 +83,7 @@ describe( "zelf", ( ) => {
 	} );
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return empty array", ( ) => {
+		it( "should return [ ]", ( ) => {
 
 			assert.deepEqual( zelf( [ ] ), [ ] );
 
@@ -108,7 +108,7 @@ describe( "zelf", ( ) => {
 	} );
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return empty array", ( ) => {
+		it( "should return [ ]", ( ) => {
 
 			assert.deepEqual( zelf( [ ] ), [ ] );
 
