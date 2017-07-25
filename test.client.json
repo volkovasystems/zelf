@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-07-25T09:51:30.611Z",
-	"end": "2017-07-25T09:51:53.425Z",
+	"start": "2017-07-25T10:04:25.587Z",
+	"end": "2017-07-25T10:04:45.907Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,53 +28,53 @@
 		{
 			"name": "zelf",
 			"duration": 0,
-			"start": "2017-07-25T09:51:53.073Z",
+			"start": "2017-07-25T10:04:45.596Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "zelf",
-			"duration": 166,
-			"start": "2017-07-25T09:51:53.074Z",
-			"end": "2017-07-25T09:51:53.240Z",
+			"duration": 133,
+			"start": "2017-07-25T10:04:45.596Z",
+			"end": "2017-07-25T10:04:45.729Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-07-25T09:51:53.075Z",
-					"end": "2017-07-25T09:51:53.075Z",
-					"duration": 0,
+					"start": "2017-07-25T10:04:45.597Z",
+					"end": "2017-07-25T10:04:45.598Z",
+					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "zelf",
 					"associatedTest": "should return window"
 				},
 				{
-					"start": "2017-07-25T09:51:53.191Z",
-					"end": "2017-07-25T09:51:53.192Z",
+					"start": "2017-07-25T10:04:45.676Z",
+					"end": "2017-07-25T10:04:45.677Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "zelf",
 					"associatedTest": "should return window"
 				},
 				{
-					"start": "2017-07-25T09:51:53.193Z",
-					"end": "2017-07-25T09:51:53.193Z",
+					"start": "2017-07-25T10:04:45.678Z",
+					"end": "2017-07-25T10:04:45.678Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "zelf",
 					"associatedTest": "should return [ ]"
 				},
 				{
-					"start": "2017-07-25T09:51:53.240Z",
-					"end": "2017-07-25T09:51:53.240Z",
+					"start": "2017-07-25T10:04:45.729Z",
+					"end": "2017-07-25T10:04:45.729Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "zelf",
 					"associatedTest": "should return [ ]"
 				},
 				{
-					"start": "2017-07-25T09:51:53.241Z",
-					"end": "2017-07-25T09:51:53.241Z",
-					"duration": 0,
+					"start": "2017-07-25T10:04:45.729Z",
+					"end": "2017-07-25T10:04:45.730Z",
+					"duration": 1,
 					"title": "\"after all\" hook",
 					"associatedSuite": "zelf"
 				}
@@ -82,15 +82,15 @@
 		},
 		{
 			"name": "`zelf( this )`",
-			"duration": 118,
-			"start": "2017-07-25T09:51:53.074Z",
-			"end": "2017-07-25T09:51:53.192Z",
+			"duration": 81,
+			"start": "2017-07-25T10:04:45.596Z",
+			"end": "2017-07-25T10:04:45.677Z",
 			"tests": [
 				{
 					"name": "should return window",
-					"start": "2017-07-25T09:51:53.074Z",
-					"end": "2017-07-25T09:51:53.191Z",
-					"duration": 117,
+					"start": "2017-07-25T10:04:45.597Z",
+					"end": "2017-07-25T10:04:45.676Z",
+					"duration": 79,
 					"state": "pass"
 				}
 			],
@@ -98,15 +98,15 @@
 		},
 		{
 			"name": "`zelf( [ ] )`",
-			"duration": 48,
-			"start": "2017-07-25T09:51:53.192Z",
-			"end": "2017-07-25T09:51:53.240Z",
+			"duration": 52,
+			"start": "2017-07-25T10:04:45.677Z",
+			"end": "2017-07-25T10:04:45.729Z",
 			"tests": [
 				{
 					"name": "should return [ ]",
-					"start": "2017-07-25T09:51:53.193Z",
-					"end": "2017-07-25T09:51:53.240Z",
-					"duration": 47,
+					"start": "2017-07-25T10:04:45.677Z",
+					"end": "2017-07-25T10:04:45.729Z",
+					"duration": 52,
 					"state": "pass"
 				}
 			],
