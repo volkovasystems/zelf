@@ -67,19 +67,19 @@ const zelf = function zelf( self ){
 
 	self = self || this;
 
-	if( asea.server && ( self === global || typeof self == "undefined" || self === null ) ){
+	if( asea.SERVER && ( self === global || typeof self == "undefined" || self === null ) ){
 		return global;
 	}
 
-	if( asea.client && ( self === window || typeof self == "undefined" || self === null ) ){
+	if( asea.CLIENT && ( self === window || typeof self == "undefined" || self === null ) ){
 		return window;
 	}
 
-	if( asea.server && typeof self == "undefined" ){
+	if( asea.SERVER && typeof self == "undefined" ){
 		return global;
 	}
 
-	if( asea.client && typeof self == "undefined" ){
+	if( asea.CLIENT && typeof self == "undefined" ){
 		return window;
 	}
 
