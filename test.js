@@ -61,13 +61,9 @@ const assert = require( "should" );
 const zelf = require( "./zelf.js" );
 //: @end-server
 
-//: @client:
-const zelf = require( "./zelf.support.js" );
-//: @end-client
 
-//: @bridge:
-const path = require( "path" );
-//: @end-bridge
+
+
 
 
 //: @server:
@@ -114,78 +110,7 @@ describe( "zelf", ( ) => {
 //: @end-server
 
 
-//: @client:
-
-describe( "zelf", ( ) => {
 
 
-	describe( "`zelf( )`", ( ) => {
-		it( "should return window", ( ) => {
-
-			assert.equal( zelf( ), window );
-
-		} );
-	} );
 
 
-	describe( "`zelf( null )`", ( ) => {
-		it( "should return window", ( ) => {
-
-			assert.equal( zelf( null ), window );
-
-		} );
-	} );
-
-
-	describe( "`zelf( this )`", ( ) => {
-		it( "should return window", ( ) => {
-
-			assert.equal( zelf( this ), window );
-
-		} );
-	} );
-
-
-	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return [ ]", ( ) => {
-
-			assert.deepEqual( zelf( [ ] ), [ ] );
-
-		} );
-	} );
-
-} );
-
-//: @end-client
-
-
-//: @bridge:
-
-describe( "zelf", ( ) => {
-
-	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
-
-	describe( "`zelf( this )`", ( ) => {
-		it( "should return window", ( ) => {
-
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( this ).toString( ) );
-
-			assert.equal( result.value, "[object Window]" );
-
-		} );
-	} );
-
-
-	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return [ ]", ( ) => {
-
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( [ ] ) );
-
-			assert.deepEqual( result.value, [ ] );
-
-		} );
-	} );
-
-} );
-
-//: @end-bridge
