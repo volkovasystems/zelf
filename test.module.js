@@ -165,6 +165,27 @@ describe( "zelf", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( "`zelf( )`", ( ) => {
+		it( "should return window", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( ).toString( ) );
+
+			assert.equal( result.value, "[object Window]" );
+
+		} );
+	} );
+
+
+	describe( "`zelf( null )`", ( ) => {
+		it( "should return window", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( null ).toString( ) );
+
+			assert.equal( result.value, "[object Window]" );
+
+		} );
+	} );
+
 	describe( "`zelf( this )`", ( ) => {
 		it( "should return window", ( ) => {
 
@@ -182,17 +203,6 @@ describe( "zelf", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => zelf( [ ] ) );
 
 			assert.deepEqual( result.value, [ ] );
-
-		} );
-	} );
-
-
-	describe( "`zelf( )`", ( ) => {
-		it( "should return window", ( ) => {
-
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( ).toString( ) );
-
-			assert.equal( result.value, "[object Window]" );
 
 		} );
 	} );
