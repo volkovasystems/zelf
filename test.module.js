@@ -186,6 +186,17 @@ describe( "zelf", ( ) => {
 		} );
 	} );
 
+
+	describe( "`zelf( )`", ( ) => {
+		it( "should return window", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( ).toString( ) );
+
+			assert.equal( result.value, "[object Window]" );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
