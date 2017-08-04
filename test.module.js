@@ -76,7 +76,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( )`", ( ) => {
-		it( "should return global", ( ) => {
+		it( "should be equal to global", ( ) => {
 
 			assert.deepEqual( zelf( ), global );
 
@@ -85,7 +85,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( null )`", ( ) => {
-		it( "should return global", ( ) => {
+		it( "should be equal to global", ( ) => {
 
 			assert.deepEqual( zelf( null ), global );
 
@@ -94,7 +94,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( global )`", ( ) => {
-		it( "should return global", ( ) => {
+		it( "should be equal to global", ( ) => {
 
 			assert.deepEqual( zelf( global ), global );
 
@@ -102,7 +102,7 @@ describe( "zelf", ( ) => {
 	} );
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return [ ]", ( ) => {
+		it( "should be equal to [ ]", ( ) => {
 
 			assert.deepEqual( zelf( [ ] ), [ ] );
 
@@ -120,7 +120,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( )`", ( ) => {
-		it( "should return window", ( ) => {
+		it( "should be equal to window", ( ) => {
 
 			assert.equal( zelf( ), window );
 
@@ -129,7 +129,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( null )`", ( ) => {
-		it( "should return window", ( ) => {
+		it( "should be equal to window", ( ) => {
 
 			assert.equal( zelf( null ), window );
 
@@ -138,7 +138,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( this )`", ( ) => {
-		it( "should return window", ( ) => {
+		it( "should be equal to window", ( ) => {
 
 			assert.equal( zelf( this ), window );
 
@@ -147,7 +147,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return [ ]", ( ) => {
+		it( "should be equal to [ ]", ( ) => {
 
 			assert.deepEqual( zelf( [ ] ), [ ] );
 
@@ -166,7 +166,7 @@ describe( "zelf", ( ) => {
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`zelf( )`", ( ) => {
-		it( "should return window", ( ) => {
+		it( "should be equal to window", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => zelf( ).toString( ) );
 
@@ -177,7 +177,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( null )`", ( ) => {
-		it( "should return window", ( ) => {
+		it( "should be equal to window", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => zelf( null ).toString( ) );
 
@@ -186,8 +186,9 @@ describe( "zelf", ( ) => {
 		} );
 	} );
 
+
 	describe( "`zelf( this )`", ( ) => {
-		it( "should return window", ( ) => {
+		it( "should be equal to window", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => zelf( this ).toString( ) );
 
@@ -198,7 +199,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return [ ]", ( ) => {
+		it( "should be equal to [ ]", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => zelf( [ ] ) );
 
