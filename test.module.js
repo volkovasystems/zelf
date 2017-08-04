@@ -101,7 +101,7 @@ describe( "zelf", ( ) => {
 	} );
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
+		it( "should be equal to empty array", ( ) => {
 
 			assert.deepEqual( zelf( [ ] ), [ ] );
 
@@ -145,7 +145,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
+		it( "should be equal to empty array", ( ) => {
 
 			assert.deepEqual( zelf( [ ] ), [ ] );
 
@@ -197,7 +197,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should be equal to [ ]", ( ) => {
+		it( "should be equal to empty array", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => zelf( [ ] ) );
 
