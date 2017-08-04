@@ -74,7 +74,6 @@ const path = require( "path" );
 
 describe( "zelf", ( ) => {
 
-
 	describe( "`zelf( )`", ( ) => {
 		it( "should be equal to global", ( ) => {
 
@@ -117,7 +116,6 @@ describe( "zelf", ( ) => {
 //: @client:
 
 describe( "zelf", ( ) => {
-
 
 	describe( "`zelf( )`", ( ) => {
 		it( "should be equal to window", ( ) => {
@@ -187,10 +185,10 @@ describe( "zelf", ( ) => {
 	} );
 
 
-	describe( "`zelf( this )`", ( ) => {
+	describe( "`zelf( window )`", ( ) => {
 		it( "should be equal to window", ( ) => {
 
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( this ).toString( ) );
+			let result = browser.url( bridgeURL ).execute( ( ) => zelf( window ).toString( ) );
 
 			assert.equal( result.value, "[object Window]" );
 
