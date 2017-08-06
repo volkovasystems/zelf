@@ -1,74 +1,74 @@
 {
-	"stats": {
-		"suites": 5,
-		"tests": 4,
-		"passes": 4,
-		"pending": 0,
-		"failures": 0,
-		"start": "2017-07-25T10:04:24.583Z",
-		"end": "2017-07-25T10:04:24.589Z",
-		"duration": 6
-	},
-	"tests": [
-		{
-			"title": "should return global",
-			"fullTitle": "zelf `zelf( )` should return global",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return global",
-			"fullTitle": "zelf `zelf( null )` should return global",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return global",
-			"fullTitle": "zelf `zelf( global )` should return global",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return [ ]",
-			"fullTitle": "zelf `zelf( [ ] )` should return [ ]",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		}
-	],
-	"pending": [],
-	"failures": [],
-	"passes": [
-		{
-			"title": "should return global",
-			"fullTitle": "zelf `zelf( )` should return global",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return global",
-			"fullTitle": "zelf `zelf( null )` should return global",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return global",
-			"fullTitle": "zelf `zelf( global )` should return global",
-			"duration": 0,
-			"currentRetry": 0,
-			"err": {}
-		},
-		{
-			"title": "should return [ ]",
-			"fullTitle": "zelf `zelf( [ ] )` should return [ ]",
-			"duration": 1,
-			"currentRetry": 0,
-			"err": {}
-		}
-	]
+  "stats": {
+    "suites": 5,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-08-06T21:21:32.848Z",
+    "end": "2017-08-06T21:21:32.863Z",
+    "duration": 15
+  },
+  "tests": [
+    {
+      "title": "should be equal to global",
+      "fullTitle": "zelf `zelf( )` should be equal to global",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to global",
+      "fullTitle": "zelf `zelf( null )` should be equal to global",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to global",
+      "fullTitle": "zelf `zelf( global )` should be equal to global",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to empty array",
+      "fullTitle": "zelf `zelf( [ ] )` should be equal to empty array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should be equal to global",
+      "fullTitle": "zelf `zelf( )` should be equal to global",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to global",
+      "fullTitle": "zelf `zelf( null )` should be equal to global",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to global",
+      "fullTitle": "zelf `zelf( global )` should be equal to global",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to empty array",
+      "fullTitle": "zelf `zelf( [ ] )` should be equal to empty array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }

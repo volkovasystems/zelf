@@ -70,9 +70,8 @@ const zelf = require( "./zelf.js" );
 
 describe( "zelf", ( ) => {
 
-
 	describe( "`zelf( )`", ( ) => {
-		it( "should return global", ( ) => {
+		it( "should be equal to global", ( ) => {
 
 			assert.deepEqual( zelf( ), global );
 
@@ -81,7 +80,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( null )`", ( ) => {
-		it( "should return global", ( ) => {
+		it( "should be equal to global", ( ) => {
 
 			assert.deepEqual( zelf( null ), global );
 
@@ -90,7 +89,7 @@ describe( "zelf", ( ) => {
 
 
 	describe( "`zelf( global )`", ( ) => {
-		it( "should return global", ( ) => {
+		it( "should be equal to global", ( ) => {
 
 			assert.deepEqual( zelf( global ), global );
 
@@ -98,7 +97,7 @@ describe( "zelf", ( ) => {
 	} );
 
 	describe( "`zelf( [ ] )`", ( ) => {
-		it( "should return [ ]", ( ) => {
+		it( "should be equal to empty array", ( ) => {
 
 			assert.deepEqual( zelf( [ ] ), [ ] );
 
