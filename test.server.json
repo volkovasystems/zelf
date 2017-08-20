@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2017-08-20T01:32:53.819Z",
-    "end": "2017-08-20T01:32:53.825Z",
-    "duration": 6
+    "start": "2017-08-20T03:50:23.875Z",
+    "end": "2017-08-20T03:50:23.886Z",
+    "duration": 11
   },
   "tests": [
     {
@@ -27,7 +27,7 @@
     {
       "title": "should be equal to global",
       "fullTitle": "zelf `zelf( global )` should be equal to global",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -59,7 +59,7 @@
     {
       "title": "should be equal to global",
       "fullTitle": "zelf `zelf( global )` should be equal to global",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
