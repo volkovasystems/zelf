@@ -5,15 +5,15 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2017-08-20T03:50:23.875Z",
-    "end": "2017-08-20T03:50:23.886Z",
-    "duration": 11
+    "start": "2017-08-21T05:09:55.867Z",
+    "end": "2017-08-21T05:09:55.882Z",
+    "duration": 15
   },
   "tests": [
     {
       "title": "should be equal to global",
       "fullTitle": "zelf `zelf( )` should be equal to global",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
@@ -34,7 +34,7 @@
     {
       "title": "should be equal to empty array",
       "fullTitle": "zelf `zelf( [ ] )` should be equal to empty array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
@@ -45,7 +45,7 @@
     {
       "title": "should be equal to global",
       "fullTitle": "zelf `zelf( )` should be equal to global",
-      "duration": 1,
+      "duration": 3,
       "currentRetry": 0,
       "err": {}
     },
@@ -66,7 +66,7 @@
     {
       "title": "should be equal to empty array",
       "fullTitle": "zelf `zelf( [ ] )` should be equal to empty array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
