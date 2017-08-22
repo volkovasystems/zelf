@@ -135,10 +135,10 @@ describe( "zelf", ( ) => {
 	} );
 
 
-	describe( "`zelf( this )`", ( ) => {
+	describe( "`zelf( window )`", ( ) => {
 		it( "should be equal to window", ( ) => {
 
-			assert.equal( zelf( this ), window );
+			assert.equal( zelf( window ), window );
 
 		} );
 	} );
