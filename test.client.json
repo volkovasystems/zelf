@@ -1,1 +1,180 @@
-{"state":{"passed":4,"failed":0,"skipped":0},"start":"2017-07-29T10:42:25.957Z","end":"2017-07-29T10:42:30.913Z","capabilities":{"browserName":"chrome","chromeOptions":{"args":["disable-gpu","headless"]},"proxy":null},"host":"127.0.0.1","port":4444,"baseUrl":"http://localhost","framework":"mocha","mochaOpts":{"timeout":10000,"ui":"bdd"},"suites":[{"name":"zelf","duration":0,"start":"2017-07-29T10:42:30.514Z","tests":[],"hooks":[]},{"name":"zelf","duration":221,"start":"2017-07-29T10:42:30.514Z","end":"2017-07-29T10:42:30.735Z","tests":[],"hooks":[{"start":"2017-07-29T10:42:30.519Z","end":"2017-07-29T10:42:30.519Z","duration":0,"title":"\"before each\" hook","associatedSuite":"zelf","associatedTest":"should return window"},{"start":"2017-07-29T10:42:30.607Z","end":"2017-07-29T10:42:30.607Z","duration":0,"title":"\"after each\" hook","associatedSuite":"zelf","associatedTest":"should return window"},{"start":"2017-07-29T10:42:30.615Z","end":"2017-07-29T10:42:30.615Z","duration":0,"title":"\"before each\" hook","associatedSuite":"zelf","associatedTest":"should return window"},{"start":"2017-07-29T10:42:30.658Z","end":"2017-07-29T10:42:30.658Z","duration":0,"title":"\"after each\" hook","associatedSuite":"zelf","associatedTest":"should return window"},{"start":"2017-07-29T10:42:30.659Z","end":"2017-07-29T10:42:30.659Z","duration":0,"title":"\"before each\" hook","associatedSuite":"zelf","associatedTest":"should return window"},{"start":"2017-07-29T10:42:30.701Z","end":"2017-07-29T10:42:30.701Z","duration":0,"title":"\"after each\" hook","associatedSuite":"zelf","associatedTest":"should return window"},{"start":"2017-07-29T10:42:30.701Z","end":"2017-07-29T10:42:30.701Z","duration":0,"title":"\"before each\" hook","associatedSuite":"zelf","associatedTest":"should return [ ]"},{"start":"2017-07-29T10:42:30.735Z","end":"2017-07-29T10:42:30.735Z","duration":0,"title":"\"after each\" hook","associatedSuite":"zelf","associatedTest":"should return [ ]"},{"start":"2017-07-29T10:42:30.735Z","end":"2017-07-29T10:42:30.735Z","duration":0,"title":"\"after all\" hook","associatedSuite":"zelf"}]},{"name":"`zelf( )`","duration":93,"start":"2017-07-29T10:42:30.516Z","end":"2017-07-29T10:42:30.609Z","tests":[{"name":"should return window","start":"2017-07-29T10:42:30.517Z","end":"2017-07-29T10:42:30.604Z","duration":87,"state":"pass"}],"hooks":[]},{"name":"`zelf( null )`","duration":48,"start":"2017-07-29T10:42:30.610Z","end":"2017-07-29T10:42:30.658Z","tests":[{"name":"should return window","start":"2017-07-29T10:42:30.615Z","end":"2017-07-29T10:42:30.658Z","duration":43,"state":"pass"}],"hooks":[]},{"name":"`zelf( this )`","duration":43,"start":"2017-07-29T10:42:30.658Z","end":"2017-07-29T10:42:30.701Z","tests":[{"name":"should return window","start":"2017-07-29T10:42:30.659Z","end":"2017-07-29T10:42:30.701Z","duration":42,"state":"pass"}],"hooks":[]},{"name":"`zelf( [ ] )`","duration":34,"start":"2017-07-29T10:42:30.701Z","end":"2017-07-29T10:42:30.735Z","tests":[{"name":"should return [ ]","start":"2017-07-29T10:42:30.701Z","end":"2017-07-29T10:42:30.735Z","duration":34,"state":"pass"}],"hooks":[]}]}
+{
+	"state": {
+		"passed": 4,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-22T03:30:27.831Z",
+	"end": "2017-08-22T03:31:17.414Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "zelf",
+			"duration": 0,
+			"start": "2017-08-22T03:31:17.000Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "zelf",
+			"duration": 234,
+			"start": "2017-08-22T03:31:17.000Z",
+			"end": "2017-08-22T03:31:17.234Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-22T03:31:17.002Z",
+					"end": "2017-08-22T03:31:17.002Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to window"
+				},
+				{
+					"start": "2017-08-22T03:31:17.101Z",
+					"end": "2017-08-22T03:31:17.101Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to window"
+				},
+				{
+					"start": "2017-08-22T03:31:17.103Z",
+					"end": "2017-08-22T03:31:17.103Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to window"
+				},
+				{
+					"start": "2017-08-22T03:31:17.149Z",
+					"end": "2017-08-22T03:31:17.149Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to window"
+				},
+				{
+					"start": "2017-08-22T03:31:17.149Z",
+					"end": "2017-08-22T03:31:17.149Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to window"
+				},
+				{
+					"start": "2017-08-22T03:31:17.190Z",
+					"end": "2017-08-22T03:31:17.191Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to window"
+				},
+				{
+					"start": "2017-08-22T03:31:17.192Z",
+					"end": "2017-08-22T03:31:17.192Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to empty array"
+				},
+				{
+					"start": "2017-08-22T03:31:17.234Z",
+					"end": "2017-08-22T03:31:17.234Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "zelf",
+					"associatedTest": "should be equal to empty array"
+				},
+				{
+					"start": "2017-08-22T03:31:17.234Z",
+					"end": "2017-08-22T03:31:17.234Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "zelf"
+				}
+			]
+		},
+		{
+			"name": "`zelf( )`",
+			"duration": 101,
+			"start": "2017-08-22T03:31:17.001Z",
+			"end": "2017-08-22T03:31:17.102Z",
+			"tests": [
+				{
+					"name": "should be equal to window",
+					"start": "2017-08-22T03:31:17.001Z",
+					"end": "2017-08-22T03:31:17.101Z",
+					"duration": 100,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`zelf( null )`",
+			"duration": 47,
+			"start": "2017-08-22T03:31:17.102Z",
+			"end": "2017-08-22T03:31:17.149Z",
+			"tests": [
+				{
+					"name": "should be equal to window",
+					"start": "2017-08-22T03:31:17.102Z",
+					"end": "2017-08-22T03:31:17.149Z",
+					"duration": 47,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`zelf( window )`",
+			"duration": 42,
+			"start": "2017-08-22T03:31:17.149Z",
+			"end": "2017-08-22T03:31:17.191Z",
+			"tests": [
+				{
+					"name": "should be equal to window",
+					"start": "2017-08-22T03:31:17.149Z",
+					"end": "2017-08-22T03:31:17.190Z",
+					"duration": 41,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`zelf( [ ] )`",
+			"duration": 43,
+			"start": "2017-08-22T03:31:17.191Z",
+			"end": "2017-08-22T03:31:17.234Z",
+			"tests": [
+				{
+					"name": "should be equal to empty array",
+					"start": "2017-08-22T03:31:17.192Z",
+					"end": "2017-08-22T03:31:17.234Z",
+					"duration": 42,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
