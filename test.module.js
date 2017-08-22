@@ -199,9 +199,9 @@ describe( "zelf", ( ) => {
 	describe( "`zelf( [ ] )`", ( ) => {
 		it( "should be equal to empty array", ( ) => {
 
-			let result = browser.url( bridgeURL ).execute( ( ) => zelf( [ ] ) );
+			let result = browser.url( bridgeURL ).execute( ( ) => JSON.stringify( zelf( [ ] ) ) );
 
-			assert.deepEqual( result.value, [ ] );
+			assert.deepEqual( JSON.parse( result.value ), [ ] );
 
 		} );
 	} );
